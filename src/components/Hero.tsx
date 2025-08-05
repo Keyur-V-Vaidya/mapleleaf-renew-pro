@@ -1,6 +1,6 @@
 import { Button } from '@/components/ui/button';
 import { CheckCircle, Phone, MapPin } from 'lucide-react';
-import logo from '@/assets/maple-leaf-logo.webp';
+import heroBackground from '@/assets/hero-background.jpg';
 
 const Hero = () => {
   const scrollToSection = (sectionId: string) => {
@@ -11,10 +11,15 @@ const Hero = () => {
   };
 
   return (
-    <section id="home" className="relative min-h-screen flex items-center hero-gradient overflow-hidden">
-      {/* Background Pattern */}
-      <div className="absolute inset-0 opacity-10">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_120%,rgba(255,255,255,0.1),transparent)]"></div>
+    <section id="home" className="relative min-h-screen flex items-center overflow-hidden">
+      {/* Background Image with Overlay */}
+      <div className="absolute inset-0">
+        <img 
+          src={heroBackground} 
+          alt="Professional cleaning services" 
+          className="w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-primary/95 via-primary/80 to-secondary/90"></div>
       </div>
 
       <div className="container mx-auto px-4 py-20 relative z-10">
@@ -61,7 +66,7 @@ const Hero = () => {
               <Button 
                 variant="outline" 
                 size="lg" 
-                className="text-lg px-8 py-6 border-white text-white hover:bg-white hover:text-primary"
+                className="text-lg px-8 py-6 border-white/30 text-white hover:bg-white/10 hover:border-white backdrop-blur-sm"
                 onClick={() => scrollToSection('services')}
               >
                 View Services
@@ -87,17 +92,19 @@ const Hero = () => {
             </div>
           </div>
 
-          {/* Logo Display */}
-          <div className="flex justify-center lg:justify-end animate-fade-in">
-            <div className="relative">
-              <div className="absolute inset-0 bg-secondary/20 rounded-full animate-pulse"></div>
-              <div className="relative bg-white rounded-full p-8 shadow-hero animate-float">
-                <img 
-                  src={logo} 
-                  alt="Maple Leaf Exterior Services" 
-                  className="w-64 h-64 lg:w-80 lg:h-80 object-contain"
-                />
-              </div>
+          {/* Professional Stats */}
+          <div className="grid grid-cols-3 gap-8 animate-fade-in">
+            <div className="text-center">
+              <div className="text-4xl lg:text-5xl font-bold text-accent mb-2">500+</div>
+              <div className="text-white/90 text-sm lg:text-base">Happy Clients</div>
+            </div>
+            <div className="text-center">
+              <div className="text-4xl lg:text-5xl font-bold text-accent mb-2">5+</div>
+              <div className="text-white/90 text-sm lg:text-base">Years Experience</div>
+            </div>
+            <div className="text-center">
+              <div className="text-4xl lg:text-5xl font-bold text-accent mb-2">24h</div>
+              <div className="text-white/90 text-sm lg:text-base">Response Time</div>
             </div>
           </div>
         </div>
