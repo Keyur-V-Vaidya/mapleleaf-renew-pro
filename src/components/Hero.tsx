@@ -26,13 +26,13 @@ const Hero = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Content */}
           <div className="text-white space-y-8 animate-fade-in">
-            <div className="space-y-4">
-              <h1 className="text-5xl lg:text-7xl font-bold leading-tight">
+            <div className="space-y-6">
+              <h1 className="font-serif text-5xl lg:text-7xl font-bold leading-tight tracking-tight">
                 Professional
-                <span className="block text-secondary">Exterior</span>
+                <span className="block text-accent font-light italic">Exterior</span>
                 <span className="block">Cleaning</span>
               </h1>
-              <p className="text-xl lg:text-2xl text-white/90 max-w-2xl">
+              <p className="text-xl lg:text-2xl text-white/90 max-w-2xl font-light leading-relaxed">
                 Delivering top-quality residential and commercial exterior cleaning with professionalism and care. We make your property shine, inside and out.
               </p>
             </div>
@@ -58,7 +58,7 @@ const Hero = () => {
               <Button 
                 variant="cta" 
                 size="lg" 
-                className="text-lg px-8 py-6"
+                className="text-lg px-8 py-6 font-semibold shadow-elegant"
                 onClick={() => scrollToSection('contact')}
               >
                 Get Free Quote
@@ -66,7 +66,7 @@ const Hero = () => {
               <Button 
                 variant="outline" 
                 size="lg" 
-                className="text-lg px-8 py-6 border-white/30 text-white hover:bg-white/10 hover:border-white backdrop-blur-sm"
+                className="text-lg px-8 py-6 border-white/30 text-white hover:bg-white/10 hover:border-white backdrop-blur-sm font-medium"
                 onClick={() => scrollToSection('services')}
               >
                 View Services
