@@ -28,7 +28,7 @@ const Hero = () => {
           <div className="text-white space-y-8 animate-fade-in">
             <div className="space-y-6">
               <h1 className="font-serif text-5xl lg:text-7xl font-bold leading-tight tracking-tight">
-                Professional
+                Maple Leaf
                 <span className="block text-accent font-light italic">Exterior</span>
                 <span className="block">Cleaning</span>
               </h1>

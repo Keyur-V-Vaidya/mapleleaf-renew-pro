@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Menu, X, Phone, Mail } from 'lucide-react';
-import logo from '@/assets/maple-leaf-logo.webp';
+import logo from '/lovable-uploads/f53586a0-1bb5-4cba-9aac-c2547c6e4476.png';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -20,7 +20,7 @@ const Header = () => {
         <nav className="flex items-center justify-between h-20">
           {/* Logo */}
           <div className="flex items-center space-x-3">
-            <img src={logo} alt="Maple Leaf Exterior Services" className="w-12 h-12 rounded-full" />
+            <img src={logo} alt="Maple Leaf Exterior Services" className="h-14 w-auto object-contain" />
             <div className="hidden sm:block">
               <h1 className="text-xl font-bold text-primary">Maple Leaf</h1>
               <p className="text-sm text-primary/70">Exterior Services</p>
