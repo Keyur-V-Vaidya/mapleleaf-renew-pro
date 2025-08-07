@@ -66,7 +66,7 @@ const Hero = () => {
               <Button 
                 variant="outline" 
                 size="lg" 
-                className="text-lg px-8 py-6 border-white/30 text-white hover:bg-white/10 hover:border-white backdrop-blur-sm font-medium"
+                className="text-lg px-8 py-6 border-white text-white hover:bg-white hover:text-primary backdrop-blur-sm font-medium bg-white/5"
                 onClick={() => scrollToSection('services')}
               >
                 View Services

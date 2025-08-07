@@ -18,6 +18,8 @@ import pressureWashingImg from '@/assets/pressure-washing.jpg';
 import solarCleaningImg from '@/assets/solar-cleaning.jpg';
 import gutterCleaningImg from '@/assets/gutter-cleaning.jpg';
 import binCleaningImg from '@/assets/bin-cleaning.jpg';
+import commercialServicesImg from '@/assets/commercial-services.jpg';
+import propertyMaintenanceImg from '@/assets/property-maintenance.jpg';
 
 const Services = () => {
   const services = [
@@ -75,7 +77,7 @@ const Services = () => {
       description: "Comprehensive exterior cleaning solutions for businesses and commercial properties.",
       features: ["Scheduled maintenance", "Storefront cleaning", "Parking lot washing", "Building maintenance"],
       startingPrice: "Quote",
-      image: null
+      image: commercialServicesImg
     },
     {
       icon: <Wrench className="w-8 h-8" />,
@@ -83,7 +85,7 @@ const Services = () => {
       description: "General exterior maintenance services to keep your property in top condition.",
       features: ["Seasonal cleanups", "Minor repairs", "Preventive maintenance", "Emergency services"],
       startingPrice: "Quote",
-      image: null
+      image: propertyMaintenanceImg
     }
   ];
 
