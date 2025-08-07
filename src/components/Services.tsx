@@ -16,6 +16,8 @@ import windowCleaningImg from '@/assets/window-cleaning.jpg';
 import roofCleaningImg from '@/assets/roof-cleaning.jpg';
 import pressureWashingImg from '@/assets/pressure-washing.jpg';
 import solarCleaningImg from '@/assets/solar-cleaning.jpg';
+import gutterCleaningImg from '@/assets/gutter-cleaning.jpg';
+import binCleaningImg from '@/assets/bin-cleaning.jpg';
 
 const Services = () => {
   const services = [
@@ -41,7 +43,7 @@ const Services = () => {
       description: "Keep your gutters flowing freely to prevent water damage and maintain drainage.",
       features: ["Debris removal", "Downspout cleaning", "Flow testing", "Minor repairs"],
       startingPrice: "$49",
-      image: null
+      image: gutterCleaningImg
     },
     {
       icon: <Zap className="w-8 h-8" />,
@@ -57,7 +59,7 @@ const Services = () => {
       description: "Keep your environment fresh with thorough bin cleaning and garbage removal.",
       features: ["Sanitization", "Odor elimination", "Regular service", "Eco-friendly products"],
       startingPrice: "$20",
-      image: null
+      image: binCleaningImg
     },
     {
       icon: <Sun className="w-8 h-8" />,
@@ -93,7 +95,7 @@ const Services = () => {
   };
 
   return (
-    <section id="services" className="py-20 bg-gradient-subtle">
+    <section id="services" className="py-20 section-bg-alt">
       <div className="container mx-auto px-4">
         {/* Header */}
         <div className="text-center max-w-4xl mx-auto mb-20 animate-fade-in">

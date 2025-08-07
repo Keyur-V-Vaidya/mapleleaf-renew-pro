@@ -166,3 +166,25 @@
     background: var(--gradient-accent);
   }
 }
+
+/* Professional background patterns */
+body {
+  background: 
+    radial-gradient(circle at 20% 80%, rgba(180, 170, 207, 0.03) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(255, 183, 77, 0.03) 0%, transparent 50%),
+    radial-gradient(circle at 40% 40%, rgba(45, 95, 130, 0.02) 0%, transparent 50%);
+  background-attachment: fixed;
+}
+
+/* Section backgrounds */
+.section-bg-pattern {
+  background: 
+    linear-gradient(135deg, rgba(255, 255, 255, 0.05) 0%, transparent 50%),
+    radial-gradient(circle at 70% 30%, rgba(45, 95, 130, 0.05) 0%, transparent 40%);
+}
+
+.section-bg-alt {
+  background: 
+    linear-gradient(-135deg, rgba(180, 170, 207, 0.03) 0%, transparent 50%),
+    radial-gradient(circle at 30% 70%, rgba(255, 183, 77, 0.03) 0%, transparent 40%);
+}

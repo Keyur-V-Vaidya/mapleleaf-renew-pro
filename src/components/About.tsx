@@ -50,7 +50,7 @@ const About = () => {
   };
 
   return (
-    <section id="about" className="py-20">
+    <section id="about" className="py-20 section-bg-pattern">
       <div className="container mx-auto px-4">
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-16 animate-fade-in">
